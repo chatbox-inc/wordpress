@@ -1,0 +1,19 @@
+{
+    "name": "chatbox-inc/wordpress",
+    "repositories":[
+        {
+            "type":"path",
+            "url": "./themes/mytheme/"
+        }
+    ],
+    "require": {
+        "composer/installers": "^1.2",
+        "owesome/mytheme": "dev-master",
+        "wp-cli/wp-cli": "^0.24.1"
+    },
+    "extra": {
+        "installer-paths": {
+            "wordpress/wp-content/themes/{$name}": ["type:wordpress-theme"]
+        }
+    }
+}
